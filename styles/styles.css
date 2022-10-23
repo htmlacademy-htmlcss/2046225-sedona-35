@@ -2,7 +2,7 @@
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-style: normal;
 	font-weight: 400;
-	src: url("/fonts/ptsans-400.woff2") format("woff2");
+	src: url("../fonts/ptsans-400.woff2") format("woff2");
 	font-display: swap;
 }
 
@@ -10,7 +10,7 @@
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-style: normal;
 	font-weight: 700;
-	src: url("/fonts/ptsans-700.woff2") format("woff2");
+	src: url("../fonts/ptsans-700.woff2") format("woff2");
 	font-display: swap;
 }
 
@@ -179,7 +179,7 @@ ul {
 
 .page-header {
 	width: 100%;
-	height: 64px;
+  min-height:64px;
 	font-size: 20px;
 	font-weight: 700;
 	line-height: 26px;
@@ -195,11 +195,10 @@ ul {
 }
 
 .navigation {
-
-	height: 64px;
 	display: flex;
 	justify-content: space-between;
 	margin-left: 168px;
+
 
 }
 
@@ -214,7 +213,7 @@ ul {
 
 .navigation-link {
 	display: block;
-	padding: 20px 16px;
+	padding: 0 16px;
 	text-align: center;
 	list-style-type: none;
 }
@@ -237,8 +236,8 @@ ul {
 
 .navigation-user {
 	display: flex;
+  align-self:flex-start;
 	width: 268px;
-	padding: 20px 0;
 	list-style-type: none;
 	align-items: center;
 	margin-right: 0;
@@ -294,14 +293,14 @@ ul {
 	width: 1200px;
 	height: 485px;
 	background-color: #333;
-	background-image: url("/images/bg-index-bottom.svg"), url("/images/bg-index-background.png");
+	background-image: url("../images/bg-index-bottom.svg"), url("../images/bg-index-background.png");
 	background-repeat: no-repeat, no-repeat;
 	background-position: center bottom, center;
 
 }
 
 .reasons {
-	height: 282px;
+	min-height: 282px;
 	margin-bottom: 0;
 	text-align: center;
 
@@ -326,7 +325,7 @@ ul {
 .general {
 	display: flex;
 	justify-content: space-between;
-	height: 384px;
+	min-height: 384px;
 	color: white;
 	text-align: center;
 	background: #82b3d3;
@@ -342,11 +341,15 @@ ul {
 	text-align: center;
 	color: #fff;
 }
+.general img {
+  display:block;
+  box-sizing: content-box;
 
+}
 
 .description-item {
 	width: 33.3%;
-	height: 384px;
+	min-height: 384px;
 	text-align: center;
 	padding: 0 85px 0;
 	box-sizing: border-box;
@@ -372,7 +375,7 @@ ul {
 
 
 .order-form {
-	height: 406px;
+	min-height: 406px;
 	text-align: center;
 
 }
@@ -442,13 +445,15 @@ a[href^="tel:"]:active {
 }
 
 .social-container {
-	width: 142px;
-	display: flex;
-	flex-wrap: wrap;
+  width: 142px;
+  min-height: 40px;
+
 }
 
 .social-button {
 	display: flex;
+  flex-wrap: wrap;
+
 
 }
 
@@ -480,7 +485,7 @@ a[href^="tel:"]:active {
 
 
 .catalog-filter {
-	background-image: url("/images/bg-catalog.jpeg") top center no-repeat;
+	background-image: url("../images/bg-catalog.jpeg") top center no-repeat;
 	background-size: cover;
 }
 
@@ -490,9 +495,9 @@ a[href^="tel:"]:active {
 
 .email-form-main {
 	width: 1200px;
-	height: 415px;
+	min-height: 415px;
 	text-decoration: none;
-	background: #fff url("/images/bg-email-form.jpeg") no-repeat;
+	background: #fff url("../images/bg-email-form.jpeg") no-repeat;
 	background-position: center;
 	background-size: cover;
 
@@ -569,7 +574,7 @@ form {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	height: 120px;
+	min-height: 120px;
 	background-color: #fff;
 }
 
@@ -579,7 +584,7 @@ form {
 .filter-form-main {
 	width: 1200px;
 	height: 412px;
-	background: #fff url("/images/bg-catalog.jpeg") no-repeat;
+	background: #fff url("../images/bg-catalog.jpeg") no-repeat;
 	background-position: top center;
 	background-size: cover;
 	color: #fff;
@@ -705,7 +710,7 @@ form {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	height: 49px;
+	min-height: 49px;
 	padding-top: 50px;
 	margin-bottom: 54px;
 }
@@ -724,17 +729,17 @@ form {
 
 
 .sort-tile {
-	background: url("/images/icons/sort-tile.svg") 50% 50% no-repeat;
+	background: url("../images/icons/sort-tile.svg") 50% 50% no-repeat;
 
 }
 
 .sort-list {
-	background: url("/images/icons/sort-list.svg") 50% 50% no-repeat;
+	background: url("../images/icons/sort-list.svg") 50% 50% no-repeat;
 
 }
 
 .sort-tile-list {
-	background: url("/images/icons/sort-list-tile.svg") 50% 50% no-repeat;
+	background: url("../images/icons/sort-list-tile.svg") 50% 50% no-repeat;
 }
 
 .select-control {
@@ -878,28 +883,28 @@ button {
 	display: block;
 	width: 88px;
 	height: 17px;
-	background: url("/images/icons/star.svg") space;
+	background: url("../images/icons/star.svg") space;
 }
 
 .stars.three {
 	display: block;
 	width: 70px;
 	height: 17px;
-	background: url("/images/icons/star.svg") space;
+	background: url("../images/icons/star.svg") space;
 }
 
 .stars.two {
 	display: block;
 	width: 52px;
 	height: 17px;
-	background: url("/images/icons/star.svg") space;
+	background: url("../images/icons/star.svg") space;
 }
 
 .stars.one {
 	display: block;
 	width: 34px;
 	height: 17px;
-	background: url("/images/icons/star.svg") space;
+	background: url("../images/icons/star.svg") space;
 }
 
 .product-card:nth-child(3n) {
@@ -912,7 +917,7 @@ button {
 }
 
 .product-card-stars {
-	background-image: url("/images/icons/star.svg") top center no-repeat;
+	background-image: url("../images/icons/star.svg") top center no-repeat;
 }
 
 .pagination-container {
@@ -980,7 +985,7 @@ button {
 	top: 60px;
 	width: 75px;
 	height: 75px;
-	background: url("/images/icons/house.svg")center no-repeat;
+	background: url("../images/icons/house.svg")center no-repeat;
 }
 
 .food::before {
@@ -990,7 +995,7 @@ button {
 	top: 60px;
 	width: 75px;
 	height: 75px;
-	background: url("/images/icons/food.svg") center no-repeat;
+	background: url("../images/icons/food.svg") center no-repeat;
 }
 
 .present::before {
@@ -1000,16 +1005,16 @@ button {
 	top: 60px;
 	width: 75px;
 	height: 75px;
-	background: url("/images/icons/present.svg") center no-repeat;
+	background: url("../images/icons/present.svg") center no-repeat;
 
 }
 
 .line-band {
-	content: url("/images/icons/band.svg");
+	content: url("../images/icons/band.svg");
 }
 
 .general .line-band {
-	content: url("/images/icons/band-white.svg");
+	content: url("../images/icons/band-white.svg");
 }
 
 .visually-hidden {
@@ -1132,7 +1137,7 @@ button {
 	height: 52px;
 	border-radius: 50%;
 	background: #f2f2f2;
-	background-image: url("/images/icons/close.svg") 50% 50% no-repeat;
+	background-image: url("../images/icons/close.svg") 50% 50% no-repeat;
 
 }
 
