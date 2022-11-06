@@ -1464,18 +1464,23 @@ a[href^="tel:"]:active {
 
 }
 
-.pagination-current {
-	background-color: #f2f2f2;
-	color: #000000;
-}
 
 .pagination-link:hover,
 .pagination-link:focus {
 	background-color: #68a2ca;
+  outline: #82B3D3 solid 1px;
 }
 
 .pagination-link:active {
 	opacity: 0.3;
+}
+
+.pagination-current,
+.pagination-current:hover,
+.pagination-current:focus {
+	background-color: #f2f2f2;
+	color: #000000;
+  outline: none;
 }
 
 
