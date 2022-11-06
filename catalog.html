@@ -139,7 +139,7 @@
                   </div>
                   </div>
                   <div class="range-slider">
-                     <div class="range-bar" style="left:0; width:205px;">
+                     <div class="range-bar" style="left:0; width:207px;">
                         <button type="button" class="range-toggle toggle-min"><span class="visually-hidden">Изменить минимальную цену.</span></button>
                         <button type="button" class="range-toggle toggle-max"><span class="visually-hidden">Изменить максимальную цену.</span></button>
                      </div>
@@ -161,16 +161,16 @@
                   <option value="expensive">Сначала дорогое</option>
                </select>
                <div class="card-sort">
-                  <button class="card-show sort-tile card-selected" type="button"><span class="visually-hidden">Показать карточки</span></button>
-                  <button class="card-show sort-tile-list" type="button" ><span class="visually-hidden">Показать карточки и список</span></button>
-                  <button class="card-show sort-list" type="button"><span class="visually-hidden">Показать список</span></button>
+                  <a class="card-show sort-tile card-selected"><span class="visually-hidden">Показать карточки</span></a>
+                  <a class="card-show sort-tile-list"><span class="visually-hidden">Показать карточки и список</span></a>
+                  <a class="card-show sort-list"><span class="visually-hidden">Показать список</span></a>
                </div>
             </section>
             <section class="catalog-products">
                <ul class="product-list">
                   <li class="product-card">
-                     <img class="product-card-image" src="images/catalog-photo/hotel-1.jpg" alt="Amara Resort & Spa.">
-                     <a class="product-card-title" href="product.html">Amara Resort & Spa</a>
+                    <a href="#"><img class="product-card-image" src="images/catalog-photo/hotel-1.jpg" alt="Amara Resort & Spa."></a>
+                     <a class="product-card-title" href="product.html">Amara Resort & Spa </a>
                      <span class="product-card-item">Гостиница</span>
                      <span class="product-card-price">От 4000 ₽</span>
                      <button class=" button-more button-brown" type="submit">Подробнее</button>
@@ -179,7 +179,7 @@
                      <span class="stars four"></span>
                   </li>
                   <li class="product-card">
-                     <img class="product-card-image" src="images/catalog-photo/hotel-2.jpg" alt="Villas at Poco Diablo.">
+                     <a href="#"><img class="product-card-image" src="images/catalog-photo/hotel-2.jpg" alt="Villas at Poco Diablo."></a>
                      <a class="product-card-title" href="product.html">Villas at Poco Diablo
                      </a>
                      <span class="product-card-item">Гостиница</span>
@@ -190,7 +190,7 @@
                      <span class="stars four"></span>
                   </li>
                   <li class="product-card">
-                     <img class="product-card-image" src="images/catalog-photo/hotel-3.jpg" alt="Desert Quail Inn.">
+                    <a href="#"><img class="product-card-image" src="images/catalog-photo/hotel-3.jpg" alt="Desert Quail Inn."></a>
                      <a class="product-card-title" href="product.html">Desert Quail Inn
                      </a>
                      <span class="product-card-item">Гостиница</span>
@@ -201,7 +201,7 @@
                      <span class="stars three"></span>
                   </li>
                   <li class="product-card">
-                     <img class="product-card-image" src="images/catalog-photo/hotel-4.jpg" alt="GreenTree Inn.">
+                    <a href="#"><img class="product-card-image" src="images/catalog-photo/hotel-4.jpg" alt="GreenTree Inn."></a>
                      <a class="product-card-title" href="product.html">GreenTree Inn
                      </a>
                      <span class="product-card-item">Гостиница</span>
@@ -291,10 +291,10 @@
                <button class="fast-order-close" type="button"></button>
                <label class="fast-order-of" for="date-start">Дата Заезда:</label>
                <div class="fast-order-of-date"><input  value="" type="text" id="date-start" name="date-start" placeholder="Укажите дату." min="2022-11-01" max="2025-12-31"><button class="calendar"></button></div>
-               <div class="date-wrong">Мы не можем отправить вас в прошлое.</div>
+               <p class="date-wrong">Мы не можем отправить вас в прошлое.</p>
                <label class="fast-order-for" for="date-finished">Дата Выезда:</label>
                <div class="fast-order-for-date"><input  value="" type="text" id="date-finished" name="date-finished" placeholder="Укажите дату." min="2022-11-01" max="2025-12-31"><button class="calendar"></button></div>
-               <div class="date-right">На эти даты есть свободные номера. Пока есть.</div>
+               <p class="date-right">На эти даты есть свободные номера. Пока есть.</p>
                <label class="fast-order-older" for="adults">Взрослые:</label>
                <div class="fast-order-older-guantity"><input  class="older-guantity-input" type="number" value="2" id="adults" name="adults" >
                   <button class="plus" type="button"></button>
