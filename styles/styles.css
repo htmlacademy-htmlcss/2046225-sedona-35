@@ -741,10 +741,10 @@ a[href^="tel:"]:active {
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-style: normal;
 	font-weight: 700;
-	padding-top: 40px;
 	font-size: 60px;
 	line-height: 78px;
 	font-weight: 700;
+  padding-top: 40px;
 }
 
 /* Range-bar*/
