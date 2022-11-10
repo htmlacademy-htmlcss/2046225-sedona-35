@@ -1667,7 +1667,7 @@ input[type='number'] {
 	color: hsla(0, 0%, 100%, 0.1);
 }
 
-button {
+.button-general {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
@@ -1680,7 +1680,6 @@ button {
 	white-space: nowrap;
 	text-transform: uppercase;
 	border: 0;
-	border-radius: 4px;
 	cursor: pointer;
 
 }
